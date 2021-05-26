@@ -1,0 +1,33 @@
+// .material-icons{
+//   &.md-light { 
+//   color: rgba(255, 255, 255, 1); 
+//   }
+// }
+.contacts{
+  display: grid;
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 6;
+  color: #e8eddf
+}
+
+.contact{
+  & a{
+    text-shadow: rgb(51, 49, 49) 1px 0 10px;
+    color: #e8eddf;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    transition: all .5s ease-in-out;
+  
+    &:hover{
+      background: grey;
+      transform: scale(1.05);
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

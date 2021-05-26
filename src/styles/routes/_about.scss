@@ -1,0 +1,26 @@
+.about-me{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  color: #e8eddf;
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 6;
+  letter-spacing: 2px;
+
+  & span{
+    font-weight: 700;
+    color: rgb(39, 42, 194)
+  }
+}
+.about-me-img-container{
+  grid-column: 2 / span 2;
+  grid-row: 14 / span 7;
+  @include flex-center;
+
+  & img{
+    height: 100%;
+    border-radius: 90%;
+
+  }
+}

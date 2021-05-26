@@ -1,0 +1,12 @@
+$class-names: (one, two, three, four, five, six, seven); // collection
+$grs: 1; // variable
+$gcs: 1; // variable
+
+@each $class in $class-names{
+  .#{$class}{
+    grid-row: $grs/ span 3;
+    grid-column: $gcs;
+  }
+  $grs: $grs+3;
+  $gcs: $gcs+1
+}

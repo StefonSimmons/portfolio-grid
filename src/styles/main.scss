@@ -1,0 +1,51 @@
+// Helpful: https://www.koderhq.com/tutorial/sass/iteration-control/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed:wght@300;700&display=swap');
+
+@import './animations/open', './animations/fadein';
+@import './iteration';
+@import './mixins';
+@import './routes/about', './routes/contact';
+
+* {
+  margin: 0;
+}
+
+.body {
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  background-color: black;
+}
+
+.box{
+  @include flex-center;
+  text-decoration: none;
+  color: black
+}
+
+.nav-block {
+  @include flex-center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  animation: open 4s ease-in;
+  
+  &:hover{
+    box-shadow: 0 0 50px 20px rgb(51, 49, 49) inset;
+    letter-spacing: 2px;
+  }
+  & h4 {
+    animation: fadein 2s ease-in-out;
+    display: none;
+    font-weight: 300;
+    transition: all 1.5s;
+  }
+}
