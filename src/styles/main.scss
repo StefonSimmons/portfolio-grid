@@ -4,7 +4,7 @@
 @import './animations/open', './animations/fadein';
 @import './iteration';
 @import './mixins';
-@import './routes/about', './routes/contact';
+@import './routes/about', './routes/contact', './routes/web-apps';
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@
   overscroll-behavior: none;
 }
 
-main {
+.main-grid {
   height: 100%;
   width: 100%;
   display: grid;
@@ -46,6 +46,7 @@ main {
     animation: fadein 2s ease-in-out;
     display: none;
     font-weight: 300;
+    font-size: 24px;
     transition: all 1.5s;
   }
 }

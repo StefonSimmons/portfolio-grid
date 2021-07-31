@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Cues App",
+    "description": "Get quick data regarding film, television, and theater production activity in New York City. Select a NYC borough and at the flip of a card, filter through date ranges and discover the most popular location and time of year for the dramatic arts' exclusive use of NYC properties.",
+    "image": "https://media.giphy.com/media/5jvn7RmwZTFSrOcw96/giphy.gif",
+    "tech": [
+      "javascript",
+      "html",
+      "css"
+    ],
+    "deployedURL": "https://stefonsimmons.github.io/Cues/",
+    "ghRepoURL": "https://github.com/StefonSimmons/cues"
+  },{
+    "name": "Sassy Landing Page",
+    "description": "A single-page React-app using Sass and CSS-Grid. My Github Repo README details a 2-hour lesson plan that I designed for my engineering students. I focused on a small set of features that Sass offers to frontend developers.",
+    "image": "https://imgur.com/L4bLSPB.png",
+    "tech": [
+      "React.js",
+      "Sass"
+    ],
+    "deployedURL": "https://sassy-landing.netlify.app/",
+    "ghRepoURL": "https://github.com/StefonSimmons/sassy-landing-page"
+  },{
+    "name": "Will-Do App",
+    "description": "Write down what you want to do and then do it with this user-friendly feature-rich app. Built with full CRUD to facilitate your editorial desires and hand-made draggable tasks for prioritizing your future.",
+    "image": "https://media.giphy.com/media/9MTkmttl7YxIXZZZ9P/giphy.gif",
+    "tech": [
+      "React.js",
+      "Airtable",
+      "Express.js",
+      "BCrypt",
+      "JSON Web Token",
+      "Axios"
+    ],
+    "deployedURL": "https://will-do.netlify.app/",
+    "ghRepoURL": "https://github.com/StefonSimmons/todo-app"
+  },{
+    "name": "Room",
+    "description": "A purely frontend responsive CSS Grid-based landing page w/ a Bootstrap carousel. My solution to an intermediate level frontendmentor.io challenge.",
+    "image": "https://imgur.com/LnPyKBw.png",
+    "tech": [
+      "Hugo",
+      "Bootstrap",
+      "Sass",
+      "Javascript",
+      "Golang"
+    ],
+    "deployedURL": "https://frontend-room.vercel.app/",
+    "ghRepoURL": "https://github.com/StefonSimmons/frontend_homepage_room"
+  },
+  {
+    "name": "Ashlea A. Morgan (Website)",
+    "description": "Ashlea is a Neuroscientist, Ph.D Candidate, and Writer. This website establishes her professional brand in these areas. The site is responsive to mobile, tablet, and desktop devices.",
+    "image": "https://imgur.com/XneYr8b.png",
+    "tech": [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "Nodemailer",
+      "animation keyframes"
+    ],
+    "deployedURL": "https://www.ashleaamorgan.com/",
+    "ghRepoURL": "https://github.com/StefonSimmons/mango-main"
+  },
+  {
+    "name": "The Poem Club",
+    "description": "'Poem Club'. A community-driven app for wordsmiths and lovers of poetry. I am actively collaborating with web developer, Lia Kapanadze and UX Designer, Adam Lempel to build this app.",
+    "image": "https://imgur.com/S9FSmnA.png",
+    "tech": [
+      "React.js",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Draft.js",
+      "EmailJS",
+      "JSON Web Token"
+    ],
+    "deployedURL": "https://www.thepoemclub.com/",
+    "ghRepoURL": "https://github.com/likunamatata/poetryclub"
+  },
+  {
+    "name": "Gig-A-Bit",
+    "description": "'Gig-A-Bit'. The talent-board app for artistic individuals and small groups. Register and post your art, project ideas and/or portfolio to be seen by talent-seekers online.",
+    "image": "https://imgur.com/A3F9TWu.png",
+    "tech": [
+      "React.js",
+      "Ruby on Rails",
+      "Axios",
+      "PostgreSQL",
+      "JSON Web Token",
+      "bcrypt"
+    ],
+    "deployedURL": "https://gig-a-bit.surge.sh/",
+    "ghRepoURL": "https://github.com/StefonSimmons/gig-a-bit"
+  },
+  {
+    "name": "Instacart-Costco",
+    "description": "'Instacart-Costco'. A re-creation of Instacart's website. Proposes a layout that enhances the navigation, personalization, flow and accessibility of the site.",
+    "image": "https://media.giphy.com/media/MF1XrtS1F0YrC21R3K/giphy.gif",
+    "tech": [
+      "React.js",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "mongoosejs",
+      "morgan",
+      "JSON Web Token",
+      "bcrypt"
+    ],
+    "deployedURL": "http://instacart-costco.surge.sh/",
+    "ghRepoURL": "https://github.com/StefonSimmons/instacart-costco"
+  },
+  {
+    "name": "World Tour",
+    "description": "'World Tour' allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.",
+    "image": "https://imgur.com/51PaEZf.png",
+    "tech": [
+      "React.js",
+      "Axios",
+      "Snapshot Testing",
+      "RESTful API",
+      "Node.js",
+      "Styled-Components"
+    ],
+    "deployedURL": "https://worldtourapp.netlify.app/",
+    "ghRepoURL": "https://github.com/StefonSimmons/world-tour"
+  }
+]

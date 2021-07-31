@@ -139,6 +139,17 @@
   transform: scale(1.05);
 }
 
+.web-app {
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.web-app:hover {
+  transform: scale(1.05);
+  border: black 3px solid;
+}
+
 * {
   margin: 0;
 }
@@ -148,7 +159,7 @@
   overscroll-behavior: none;
 }
 
-main {
+.main-grid {
   height: 100%;
   width: 100%;
   display: grid;
@@ -185,6 +196,7 @@ main {
   animation: fadein 2s ease-in-out;
   display: none;
   font-weight: 300;
+  font-size: 24px;
   transition: all 1.5s;
 }
 /*# sourceMappingURL=main.css.map */
