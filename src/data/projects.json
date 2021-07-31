@@ -4,9 +4,9 @@
     "description": "Get quick data regarding film, television, and theater production activity in New York City. Select a NYC borough and at the flip of a card, filter through date ranges and discover the most popular location and time of year for the dramatic arts' exclusive use of NYC properties.",
     "image": "https://media.giphy.com/media/5jvn7RmwZTFSrOcw96/giphy.gif",
     "tech": [
-      "javascript",
-      "html",
-      "css"
+      "Javascript",
+      "Html 5",
+      "Css 3"
     ],
     "deployedURL": "https://stefonsimmons.github.io/Cues/",
     "ghRepoURL": "https://github.com/StefonSimmons/cues"
@@ -29,7 +29,7 @@
       "Airtable",
       "Express.js",
       "BCrypt",
-      "JSON Web Token",
+      "JWT",
       "Axios"
     ],
     "deployedURL": "https://will-do.netlify.app/",
@@ -57,7 +57,7 @@
       "Express.js",
       "Node.js",
       "Nodemailer",
-      "animation keyframes"
+      "keyframes"
     ],
     "deployedURL": "https://www.ashleaamorgan.com/",
     "ghRepoURL": "https://github.com/StefonSimmons/mango-main"
@@ -68,11 +68,11 @@
     "image": "https://imgur.com/S9FSmnA.png",
     "tech": [
       "React.js",
-      "Ruby on Rails",
+      "Rails",
       "PostgreSQL",
       "Draft.js",
       "EmailJS",
-      "JSON Web Token"
+      "JWT"
     ],
     "deployedURL": "https://www.thepoemclub.com/",
     "ghRepoURL": "https://github.com/likunamatata/poetryclub"
@@ -83,10 +83,10 @@
     "image": "https://imgur.com/A3F9TWu.png",
     "tech": [
       "React.js",
-      "Ruby on Rails",
+      "Rails",
       "Axios",
       "PostgreSQL",
-      "JSON Web Token",
+      "JWT",
       "bcrypt"
     ],
     "deployedURL": "https://gig-a-bit.surge.sh/",
@@ -104,7 +104,7 @@
       "MongoDB",
       "mongoosejs",
       "morgan",
-      "JSON Web Token",
+      "JWT",
       "bcrypt"
     ],
     "deployedURL": "http://instacart-costco.surge.sh/",
@@ -117,10 +117,10 @@
     "tech": [
       "React.js",
       "Axios",
-      "Snapshot Testing",
-      "RESTful API",
+      "Snapshot_Testing",
+      "RESTful_API",
       "Node.js",
-      "Styled-Components"
+      "Styled_Components"
     ],
     "deployedURL": "https://worldtourapp.netlify.app/",
     "ghRepoURL": "https://github.com/StefonSimmons/world-tour"

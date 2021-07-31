@@ -22,7 +22,7 @@ export default function WebApps() {
           return (
             <Fragment key={idx}>
               <div
-                className="web-app"
+                className={`web-app ${idx === openModal ? 'hide': null}`}
                 style={styleAppImg(app.image, idx)}
                 onClick={() => setModal(idx)}
               >

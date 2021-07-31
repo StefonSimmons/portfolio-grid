@@ -9,7 +9,14 @@ export default function WebAppModal({ openModal, idx, setModal, app }) {
         <h1>{app.name}</h1>
         <img src={app.image} alt={app.name} />
         <p>{app.description}</p>
-        
+        <h2>Tech</h2>
+        <div className="modal-tech-container">
+          {
+            app.tech.map((t, idx) => (
+              <p key={idx}>{t}</p>
+            ))
+          }
+        </div>
         <div className='modal-btn-container'>
           <a href={app.deployedURL} target="_blank" rel="noreferrer">
             <button>
