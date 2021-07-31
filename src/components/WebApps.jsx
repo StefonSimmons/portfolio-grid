@@ -1,7 +1,10 @@
-import React from 'react'
+import { Fragment, useState } from 'react'
 import projects from '../data/projects.json'
+import WebAppModal from './WebAppModal'
 
 export default function WebApps() {
+
+  const [openModal, setModal] = useState(null)
 
   const styleAppImg = (image, pos) => {
     const webApp = {
@@ -17,13 +20,15 @@ export default function WebApps() {
       {
         projects.map((app, idx) => {
           return (
-            <div
-              key={idx}
-              className="web-app"
-              style={styleAppImg(app.image, idx)}
-            >
-              {/* <img src={app.image} alt={app.name}/> */}
-            </div>
+            <Fragment key={idx}>
+              <div
+                className="web-app"
+                style={styleAppImg(app.image, idx)}
+                onClick={() => setModal(idx)}
+              >
+              </div>
+              <WebAppModal openModal={openModal} idx={idx} setModal={setModal} app={app} />
+            </Fragment>
           )
         })
       }

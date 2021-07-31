@@ -1,13 +1,17 @@
 // Helpful: https://www.koderhq.com/tutorial/sass/iteration-control/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$primary-font: 'Ubuntu', sans-serif;
 
 @import './animations/open', './animations/fadein';
 @import './iteration';
 @import './mixins';
 @import './routes/about', './routes/contact', './routes/web-apps';
 
+
 * {
   margin: 0;
+  font-family: $primary-font;
 }
 
 .body {
@@ -40,7 +44,7 @@
   
   &:hover{
     box-shadow: 0 0 50px 20px rgb(51, 49, 49) inset;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
   }
   & h4 {
     animation: fadein 2s ease-in-out;

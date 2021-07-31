@@ -1,11 +1,17 @@
-import { Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Route, useHistory } from 'react-router-dom'
 import Box from './Box'
-import { navs } from '../navData'
+import { navs } from '../data/navData'
 import About from './About'
 import Contact from './Contact'
 import WebApps from './WebApps'
 
 export default function Grid() {
+  const history = useHistory()
+
+  useEffect(() => {
+    history.push('/')
+  },[history])
 
   return (
     <main className="main-grid">
