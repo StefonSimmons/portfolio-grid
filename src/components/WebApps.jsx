@@ -1,10 +1,9 @@
-import { Fragment, useState } from 'react'
+import { Fragment} from 'react'
 import projects from '../data/projects.json'
 import WebAppModal from './WebAppModal'
 
-export default function WebApps() {
+export default function WebApps({openModal, setModal}) {
 
-  const [openModal, setModal] = useState(null)
 
   const styleAppImg = (image, pos) => {
     const webApp = {

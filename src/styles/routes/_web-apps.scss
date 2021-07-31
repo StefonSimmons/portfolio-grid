@@ -8,7 +8,8 @@
     border: black 3px solid;
   }
 }
-.web-app-modal-bg{
+
+.modal-bg{
   position: absolute;
   @include flex-center;
   height: 100vh;

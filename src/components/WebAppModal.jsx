@@ -2,7 +2,7 @@
 export default function WebAppModal({ openModal, idx, setModal, app }) {
   return (
     <div
-      className={`web-app-modal-bg ${openModal === idx ? null : 'hide'}`}
+      className={`modal-bg ${openModal === idx ? null : 'hide'}`}
       onClick={() => setModal(false)}
     >
       <div className="web-app-modal" onClick={(e) => e.stopPropagation()}>

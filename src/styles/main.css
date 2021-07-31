@@ -149,7 +149,7 @@
   border: black 3px solid;
 }
 
-.web-app-modal-bg {
+.modal-bg {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -158,7 +158,7 @@
   width: 100vw;
 }
 
-.web-app-modal-bg .web-app-modal {
+.modal-bg .web-app-modal {
   width: 500px;
   min-height: 700px;
   box-sizing: border-box;
@@ -173,17 +173,17 @@
   color: black;
 }
 
-.web-app-modal-bg .web-app-modal img {
+.modal-bg .web-app-modal img {
   width: 100%;
   height: 300px;
 }
 
-.web-app-modal-bg .web-app-modal p {
+.modal-bg .web-app-modal p {
   margin: 0 15px;
   line-height: 2;
 }
 
-.web-app-modal-bg .web-app-modal .modal-tech-container {
+.modal-bg .web-app-modal .modal-tech-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -192,13 +192,13 @@
   overflow-y: scroll;
 }
 
-.web-app-modal-bg .web-app-modal .modal-btn-container {
+.modal-bg .web-app-modal .modal-btn-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.web-app-modal-bg .web-app-modal .modal-btn-container button {
+.modal-bg .web-app-modal .modal-btn-container button {
   border: #ede8df;
   background-color: black;
   color: white;
@@ -209,7 +209,7 @@
   transition: all .75s ease-in;
 }
 
-.web-app-modal-bg .web-app-modal .modal-btn-container button:hover {
+.modal-bg .web-app-modal .modal-btn-container button:hover {
   box-shadow: 0 0 50px 20px #333131 inset;
   letter-spacing: 6px;
 }
