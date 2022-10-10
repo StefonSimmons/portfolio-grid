@@ -153,14 +153,8 @@
   border-radius: 90%;
 }
 
-.contacts {
-  display: grid;
-  grid-column: 5 / span 2;
-  grid-row: 3 / span 6;
-  color: #e8eddf;
-}
-
 .contact {
+  margin: 25px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +164,7 @@
   text-shadow: #333131 1px 0 10px;
   color: #e8eddf;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   letter-spacing: 2px;
   padding: 5px 15px;
@@ -179,7 +173,7 @@
 
 .contact a:hover {
   background: grey;
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .web-app {
