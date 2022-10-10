@@ -1,0 +1,40 @@
+.modal {
+  background-color: black;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  grid-column: 2/ span 5;
+  grid-row: 4/ span 14;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  grid-template-rows: repeat(12,1fr);
+  &.close {
+    display: none;
+  }
+  &.open {
+    display: grid;
+  }
+  .modal-content-container {
+    padding: 40px;
+    grid-row: 2 / -1;
+  }
+  .modal-header {
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    grid-row: 1;
+    padding: 0px 24px;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    align-items: center;
+    a{
+      justify-self: center;
+      .modal-close {
+        color: white;
+        border-radius: 45px;
+        background-color: rgb(189, 28, 28);
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

@@ -1,10 +1,8 @@
 .about-me{
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
   text-align: center;
   color: #e8eddf;
-  grid-column: 5 / span 2;
-  grid-row: 3 / span 6;
   letter-spacing: 2px;
 
   & span{
@@ -13,8 +11,7 @@
   }
 }
 .about-me-img-container{
-  grid-column: 2 / span 2;
-  grid-row: 14 / span 7;
+  margin-top: 20px;
   @include flex-center;
 
   & img{

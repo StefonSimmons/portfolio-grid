@@ -1,21 +1,13 @@
-// .material-icons{
-//   &.md-light { 
-//   color: rgba(255, 255, 255, 1); 
-//   }
-// }
-.contacts{
-  display: grid;
-  grid-column: 5 / span 2;
-  grid-row: 3 / span 6;
-  color: #e8eddf;
-}
+
+
 
 .contact{
+  margin: 25px 0;
   & a{
     text-shadow: rgb(51, 49, 49) 1px 0 10px;
     color: #e8eddf;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     letter-spacing: 2px;
     padding: 5px 15px;
@@ -23,7 +15,7 @@
   
     &:hover{
       background: grey;
-      transform: scale(1.05);
+      transform: scale(1.15);
     }
   }
   @include flex-center;

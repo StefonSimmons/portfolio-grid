@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react'
 import { Route, useHistory } from 'react-router-dom'
 import Box from './Box'
 import { navs } from '../data/navData'
+import Modal from './layout/Modal'
 import About from './About'
 import Contact from './Contact'
 import WebApps from './WebApps'
 
 export default function Grid() {
   const history = useHistory()
-  const [openModal, setModal] = useState(null)
+  const [openModal, setModal] = useState(false)
 
 
   useEffect(() => {
@@ -17,15 +18,21 @@ export default function Grid() {
 
   return (
     <main className="main-grid">
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/web-apps" render={() => <WebApps openModal={openModal} setModal={setModal} />} />
+      <Modal openModal={openModal} setModal={setModal}>
+        <Route path="/about" component={About}/>
+        <Route path="/contact" component={Contact} />
+        <Route path="/web-apps" component={WebApps}/>
+      </Modal>
 
       {
         navs.map((nav, idx) => (
-          <Box key={idx} nav={nav} />
+          <Box key={idx} nav={nav} openModal={openModal} setModal={setModal}/>
         ))
       }
+      <div onClick={() => {
+        setModal(false)
+        history.push('/')
+      }} className={`modal-bg ${openModal ? 'open' : 'close'}`}></div>
     </main>
   )
 }

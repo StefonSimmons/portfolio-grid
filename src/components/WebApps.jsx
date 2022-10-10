@@ -1,36 +1,37 @@
-import { Fragment} from 'react'
 import projects from '../data/projects.json'
-import WebAppModal from './WebAppModal'
 
-export default function WebApps({openModal, setModal}) {
+export default function WebApps() {
+  let rowPos = -1
 
-
-  const styleAppImg = (image, pos) => {
+  const styleAppImg = (idx) => {
+    const mod = (idx % 5)
+    const colPos = mod * 2 + 1
+    if (!mod) {
+      rowPos += 2
+    }
     const webApp = {
-      backgroundImage: `url(${image})`,
-      gridColumn: `${pos <= 5 ? pos + 2 : (pos - 5) + 2}`,
-      gridRow: `${pos <= 5 ? pos * 3 + 1 : (pos - 6) * 3 + 1}/ span 3`
+      gridColumn: `${colPos} / span 2`,
+      gridRow: `${rowPos}/ span 2`,
+      padding: '4px',
     }
     return webApp
   }
 
   return (
     <>
-      {
-        projects.map((app, idx) => {
-          return (
-            <Fragment key={idx}>
-              <div
-                className={`web-app ${idx === openModal ? 'hide': null}`}
-                style={styleAppImg(app.image, idx)}
-                onClick={() => setModal(idx)}
-              >
-              </div>
-              <WebAppModal openModal={openModal} idx={idx} setModal={setModal} app={app} />
-            </Fragment>
-          )
-        })
-      }
+      <div
+        className='web-apps'
+      >
+        {
+          projects.map((app, idx) => {
+            return (
+              <a href={app.deployedURL} style={styleAppImg(idx, app.image)} target="_blank" rel="noreferrer" key={idx}>
+                <img src={app.image} alt={app.name}/>
+              </a>
+            )
+          })
+        }
+      </div>
     </>
   )
 }

@@ -6,6 +6,7 @@ $primary-font: 'Ubuntu', sans-serif;
 @import './animations/open', './animations/fadein';
 @import './iteration';
 @import './mixins';
+@import './modal';
 @import './routes/about', './routes/contact', './routes/web-apps';
 
 
@@ -26,6 +27,19 @@ $primary-font: 'Ubuntu', sans-serif;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(21, 1fr);
   background-color: black;
+
+  .modal-bg{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100%;
+    &.open{
+      display: block;
+    }
+    &.close{
+      display: none;
+    }
+  }
 }
 
 .box{
