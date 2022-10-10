@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 
-export default function Box({ nav }) {
+export default function Box({ nav, setModal }) {
   const [block, setBlock] = useState(false)
 
 
@@ -26,6 +26,7 @@ export default function Box({ nav }) {
           </a>
           :
           <Link
+            onClick={() => setModal(true)}
             to={`/${lowerCaseTitle.replace(' ', '-')}`}
             className={`${nav.id} box`}
           >

@@ -1,0 +1,40 @@
+.modal {
+  background-color: black;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  grid-column: 2/ span 5;
+  grid-row: 4/ span 14;
+  z-index: 10;
+  &.close {
+    display: none;
+  }
+  &.open {
+    display: block;
+  }
+  .modal-content-container {
+    padding: 40px;
+  }
+  .modal-header {
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    height: 8%;
+    padding: 0px 24px;
+    position: relative;
+    h1{
+      position: relative;
+      display: inline;
+      top: 16%;
+      left: 0
+    }
+    .modal-close {
+      position: absolute;
+      right: 4%;
+      top: 30%;
+      color: white;
+      border-radius: 45px;
+      background-color: rgb(189, 28, 28);
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
