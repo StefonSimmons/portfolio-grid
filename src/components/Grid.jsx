@@ -21,7 +21,7 @@ export default function Grid() {
       <Modal openModal={openModal} setModal={setModal}>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact} />
-        <Route path="/web-apps" render={() => <WebApps openModal={openModal} setModal={setModal} />} />
+        <Route path="/web-apps" component={WebApps}/>
       </Modal>
 
       {

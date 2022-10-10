@@ -29,6 +29,7 @@ $primary-font: 'Ubuntu', sans-serif;
   background-color: black;
 
   .modal-bg{
+    position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100vw;
     height: 100%;
