@@ -3,9 +3,14 @@ $grs: 1; // variable
 $gcs: 1; // variable
 
 @each $class in $class-names{
-  .#{$class}{
+  .#{$class}{ // nav box on home
     grid-row: $grs/ span 3;
     grid-column: $gcs;
+    @media (max-width: 1024px){
+      grid-column: 1/-1;
+      border-top: 1px solid grey;  
+      border-bottom: 1px solid grey;  
+    }
   }
   $grs: $grs+3;
   $gcs: $gcs+1
