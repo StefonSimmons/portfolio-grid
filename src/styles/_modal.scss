@@ -24,6 +24,7 @@
   .modal-content-container {
     padding: 40px;
     grid-row: 2 / -1;
+    overflow-y: scroll;
   }
   .modal-header {
     background-color: white;

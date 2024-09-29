@@ -15,7 +15,7 @@ export default function Box({ nav, setModal }) {
       {
         lowerCaseTitle === 'resume' ?
           <a
-            href="https://drive.google.com/file/d/1yanrv5edg4dpsqsD5LdRrncJKKR7A4Xw/view?usp=sharing"
+            href="https://docs.google.com/document/d/e/2PACX-1vSvbZ-StlnP1y2xOn_JGw3WhErcAfwlaEXpsmP0z7TDtBpVmjxMS35ePotYHvjZ8yB3DDqz-7KkE5m8/pub"
             className={`${nav.id} box`}
             target="_blank"
             rel="noreferrer"
